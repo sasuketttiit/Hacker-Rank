@@ -1,0 +1,10 @@
+def diagonalDifference(arr):
+	prim_sum = sec_sum = 0
+	for i in range(len(arr)):
+		for j in range(len(arr)):
+			if i == j:
+				prim_sum += arr[i][j]
+			if i+j = (len(arr)-1):
+				sec_sum += arr[i][j]
+	
+	return abs(prim_sum - sec_sum)
