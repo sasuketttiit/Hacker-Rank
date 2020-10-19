@@ -1,0 +1,8 @@
+def birthday(s, d, m):
+    ctr = 0
+    temp_sum = 0
+    for i in range(len(s)):
+        temp_sum = sum(s[i:i+m])
+        if temp_sum == d:
+            ctr += 1
+    return ctr
